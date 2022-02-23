@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <robot name="wheely" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="left_drive_tran">
+<transmission name="lidar_rot_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="left_drive">
+  <joint name="lidar_rot">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="left_drive_actr">
+  <actuator name="lidar_rot_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
@@ -23,12 +23,12 @@
   </actuator>
 </transmission>
 
-<transmission name="lidar_rot_tran">
+<transmission name="left_drive_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="lidar_rot">
+  <joint name="left_drive">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="lidar_rot_actr">
+  <actuator name="left_drive_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
